@@ -25,7 +25,7 @@ jobs:
       - name: Build and Run Application
         run: |
           ./gradlew clean build
-          java -jar build/libs/ecommerce-0.0.1-SNAPSHOT.jar
+          java -jar build/libs/ecommerce-0.0.1-SNAPSHOT.jar &
 
       - name: Wait for Application to Start
         run: |
